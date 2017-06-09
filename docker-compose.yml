@@ -4,6 +4,6 @@ mysql:
    - MYSQL_ROOT_PASSWORD=root
   command: "mysql -uroot -proot < createDB.sql"
   volumes:
-    - srv/owncloud/mysql:/var/lib/mysql
+    - /home/nico/nas/srv/owncloud/mysql:/var/lib/mysql
   ports:
     - "3306:3306"
