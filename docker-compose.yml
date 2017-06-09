@@ -15,6 +15,9 @@ ownCloud:
   image: owncloud
   ports:
     - 80:80
+  volumes:
+  - /home/nico/nas/srv/owncloud/config:/var/www/html/config
+  - /home/nico/nas/srv/owncloud/data:/var/www/html/data
 nginx:
   image: nginx
   ports:
