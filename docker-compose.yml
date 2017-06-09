@@ -1,2 +1,2 @@
-my-test:
-  image: hello-world
+my-sql:
+  image: mysql
