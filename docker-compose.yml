@@ -1,2 +1,7 @@
-my-sql:
-  image: mysql
+mysql:
+  image: mysql:5.6.26
+  environment:
+   - MYSQL_ROOT_PASSWORD=root
+  command: "mysql -uroot -proot < createDB.sql"
+  ports:
+    - "3306:3306"
