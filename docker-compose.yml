@@ -11,3 +11,9 @@ redis:
   image: redis
   expose:
     - 6379
+nginx:
+  image:nginx
+  #volumes:
+  #  - /home/nico/nas/srv/owncloud/mysql:/var/lib/mysql
+  expose:
+    - 80
