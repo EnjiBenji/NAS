@@ -7,3 +7,7 @@ mysql:
     - /home/nico/nas/srv/owncloud/mysql:/var/lib/mysql
   expose:
     - 3306
+redis:
+  image: redis
+  expose:
+    - 6379
