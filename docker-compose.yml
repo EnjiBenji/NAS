@@ -12,6 +12,6 @@ redis:
   expose:
     - 6379
 nginx:
-  image:nginx
+  image: nginx
   ports:
-    - 80
+    - 80:80
