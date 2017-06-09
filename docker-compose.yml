@@ -15,5 +15,5 @@ nginx:
   image:nginx
   #volumes:
   #  - /home/nico/nas/srv/owncloud/mysql:/var/lib/mysql
-  expose:
+  ports:
     - 80
